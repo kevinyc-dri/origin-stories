@@ -14,8 +14,12 @@ import { ColorModeSwitcher } from './ColorModeSwitcher';
 
 function App() {
   return (
-    <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
+    <ChakraProvider theme={theme} >
+      <Box
+        textAlign="center"
+        fontSize="xl"
+        color='#FF3864'
+        backgroundColor='#190027'>
         <Grid minH="100vh" p={3}>
           <Stack as="nav" direction={["row"]} spacing={8} justifyContent="space-between">
             <Heading justifyContent="left">Test</Heading>
