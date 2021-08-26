@@ -3,10 +3,6 @@ import Header from './components/Header'
 import {
   ChakraProvider,
   Box,
-  Text,
-  Link,
-  Stack,
-  Code,
   Grid,
   theme,
 } from '@chakra-ui/react';
