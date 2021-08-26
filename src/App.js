@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './components/Header'
 import {
   ChakraProvider,
   Box,
@@ -8,28 +9,21 @@ import {
   Code,
   Grid,
   theme,
-  Heading,
 } from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
 
 function App() {
   return (
     <ChakraProvider theme={theme} >
-      <Box
+      <Box 
         textAlign="center"
-        fontSize="xl"
-        color='#FF3864'
+        fontWeight="700"
+        fontFamily="Space Mono" 
+        fontSize="21px"
+        lineHeights="38px" 
+        color='#FF3864' 
         backgroundColor='#190027'>
         <Grid minH="100vh" p={3}>
-          <Stack as="nav" direction={["row"]} spacing={8} justifyContent="space-between">
-            <Heading justifyContent="left">Test</Heading>
-            <div>Manifesto</div>
-            <div>Services</div>
-            <div>Portfolio</div>
-            <div>Join</div>
-            <div>Hire</div>
-            <ColorModeSwitcher justifySelf="flex-end" />
-          </Stack>
+          <Header />
         </Grid>
       </Box>
     </ChakraProvider>
