@@ -4,7 +4,7 @@ import {
   Box,
   Text,
   Link,
-  HStack,
+  Stack,
   Code,
   Grid,
   theme,
@@ -17,10 +17,15 @@ function App() {
     <ChakraProvider theme={theme}>
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh" p={3}>
-          <ColorModeSwitcher justifySelf="flex-end" />
-          <HStack as="nav" alignItems="center" justifyContent="space-between" spacing={8}>
-            <Heading>Test</Heading>
-          </HStack>
+          <Stack as="nav" direction={["row"]} spacing={8} justifyContent="space-between">
+            <Heading justifyContent="left">Test</Heading>
+            <div>Manifesto</div>
+            <div>Services</div>
+            <div>Portfolio</div>
+            <div>Join</div>
+            <div>Hire</div>
+            <ColorModeSwitcher justifySelf="flex-end" />
+          </Stack>
         </Grid>
       </Box>
     </ChakraProvider>
